@@ -17,29 +17,29 @@ p{
   column-gap: 30px;
 } */
 
-ul{
+/* ul{ */
   /* border-width: 4px;
   border-style: solid;
   border-color: crimson; */
   /* border: 4px solid crimson; */
-  border-bottom: 6px dotted #a89bf7;
+  /* border-bottom: 6px dotted #a89bf7;
   border-left: 8px dashed #679c67;
-}
+} */
 
-li{
+/* li{
   list-style-type: square;
   /* text-shadow: 2px 2px lightgray; */
-  text-shadow: 2px 2px #e9e9e9;
-}
+  /* text-shadow: 2px 2px #e9e9e9; */
+/* } */ 
 
 
 /* watch out for padding collapse on inline elements
 no margin top and bottom for inline elements, use inline-block to access ful margin options but still keep elements inline. */
-span{
+/* span{
   display: inline-block;
   margin: 20px;  
   padding: 20px; 
-}
+} */
 
   /* watch out for margin collapse on block-level elements
    the lager margin will be set and the smaller margin ignored. If the
@@ -51,7 +51,7 @@ span{
 } */
 
 /* element and class style */
-p.error{
+/* p.error{
   color: rgb(190, 60, 43);
 }
 p.success{
@@ -59,29 +59,29 @@ p.success{
 }
 p.success.feedback{
   border: 2px solid palevioletred;
-}
+} */
 
 
-.span-style{
+/* .span-style{
   display: inline-block;
   margin: 20px;  
   padding: 20px; 
-}
+} */
 
 /* id style */
-#content{
+/* #content{
   background-color: #ebebeb;
   padding: 20px;
   margin: 20px;
-}
+} */
 
 /* child descendant style */
-div p{
+/* div p{
   text-decoration: underline;
-}
+} */
 
 /* If there is no space between selected elements, we get the div with the class of error, if there is a space between the elements, we get all elements inside the div with a class of error */
-div.error{
+/* div.error{
   font-size: larger;
   color: pink;
 }
@@ -89,7 +89,7 @@ div.error{
 div .error{
   font-size: smaller;
   color: blue;
-}
+} */
 
 /* Styling using attribute selectors */
 a[href="https://en.wikipedia.org/wiki/Advaita_Vedanta"]{
@@ -124,4 +124,22 @@ a[href$="/Buddhism"]{
   font-weight: bold;
   text-transform: uppercase;
   border: 2px solid gold;
+}
+
+/* Inheritance elements inside other elements inherit some styles automagically, usually test related styles; fonts, colors etc. If we want to inherit other styles we can use the inherit declaration on the selected selectors */
+div{
+  /* inherited */
+  color: rgb(128, 0, 0);
+  font-size: 20px;
+  /* not inherited */
+  border: 2px solid seagreen;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* inherit the uninherited styles for all p tags nested in a div tag */
+p{
+  border:inherit;
+  margin: inherit;
+  padding: inherit;
 }
