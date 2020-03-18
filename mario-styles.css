@@ -140,3 +140,23 @@ footer{
   padding: 10px;
   text-align: center;
 }
+
+/* pseudo classes */
+
+nav li a:hover{
+  text-decoration: underline;
+}
+
+.images li:hover{
+  position: relative;
+  top: -6px;
+}
+
+form input:focus{
+  border: 3px solid #4b4b4b;
+  outline: none;
+}
+
+form input:valid{
+  border: 3px solid #71d300
+}
