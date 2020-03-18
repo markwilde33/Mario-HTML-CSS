@@ -78,7 +78,6 @@ nav li a{
 
 nav li a.join{
   color: #F63232;
-  padding: inherit;
 }
 
 main{
@@ -116,7 +115,7 @@ article p{
   max-width: 100%;
 }
 
-.join{
+section.join{
   background: #F4F4F4;
   text-align: center;
   padding: 60px 20px;
