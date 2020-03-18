@@ -95,5 +95,22 @@ article h2{
 
 article p{
   line-height: 2em;
-  colr: #4B4B4B;
+  color: #4B4B4B;
+}
+
+.images{
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+
+.images li{
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+
+}
+
+.images li img{
+  max-width: 100%;
 }
