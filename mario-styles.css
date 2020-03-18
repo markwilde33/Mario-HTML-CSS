@@ -125,6 +125,9 @@ section.join{
 .join h2{
   font-size: 32px;
 }
+.join p{
+  letter-spacing: .03em;
+}
 
 form input{
   margin: 20px 0;
@@ -159,4 +162,19 @@ form input:focus{
 
 form input:valid{
   border: 3px solid #71d300
+}
+
+/* pseudo elements */
+
+article p::first-line{
+  font-weight: bold;
+}
+
+section.join p::first-letter{
+  font-weight: bold;
+}  
+
+p::selection{
+  background-color: #F63232;
+  color: white;
 }
