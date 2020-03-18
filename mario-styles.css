@@ -1,0 +1,19 @@
+.banner{
+  position: relative;
+}
+
+.banner img{
+  max-width: 100%;
+}
+
+.banner .welcome{
+  background-color: #FEB614;
+  position: absolute;
+  top: 30%;
+  left: 0; 
+}
+
+.welcome-style{
+  padding: 0 10px;
+  margin: 10px 0;
+}
